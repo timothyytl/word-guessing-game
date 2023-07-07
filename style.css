@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif
+}
+
+body {
+    background: url('https://wallpaperboat.com/wp-content/uploads/2021/03/16/71326/nature-minimalist-style-20.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    font-size: 16px;
+    background: url(/assets/hangman.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 90vw;
+    max-width: 800px;
+    height: 550px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 1.6em;
+}
+
+#select-container h2 {
+    text-align: center;
+    border: 5px solid #fae588;
+    border-radius: .8em;
+    padding: 10px 10px;
+    margin: 0 25%;
+    background: #fff;
+}
+
+#select-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: .3em;
+    margin-bottom: 1em;
+    padding: 1em 1.5em;
+    background: #fff;
+    border: 5px solid #a2d2ff;
+    border-radius: 1.6em;
+}
+
+#select-container button {
+    padding: 0.6em 1.2em;
+    border: 2px solid #adb5bd;
+    background-color: #fff;
+    color: #d90429;
+    font-weight: 600;
+    border-radius: 1em;
+}
+
+#select-container button:disabled {
+    border: 2px solid #adb5bd;
+    color: #d90429;
+    background-color: #efefef;
+}
+
+#select-container button:hover {
+    border: 2px solid #545454;
+    transition: .1s ease-in-out;
+} 
+
+.letter-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .2em;
+}
+
+#letter-container button {
+    height: 3em;
+    width: 3em;
+    border: 3px solid #adb5bd;
+    border-radius: 1em;
+    background: #fff;
+    font-weight: 800;
+    font-size: medium;
+    color: maroon;
+}
+
+#letter-container button:active {
+    transform: translateY(2px);
+}
+
+.new-game-popup {
+    background: url(/assets/hangman.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .6em;
+}
+
+#user-input-section {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin: .6em 0 1.2em 0;
+}
+
+.hide {
+    display: none;
+}
+
+#result-text {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+#result-text p {
+    font-size: 1.25em;
+    margin: .7em 0 2em 0;
+}
+
+#result-text h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+#result-text span {
+    font-weight: 700;
+    color: #fff;
+}
+
+#new-game-button {
+    font-size: x-large;
+    padding: 1em 3.5em;
+    background-color: gray;
+    border: 1px solid #fff;
+    color: #000000;
+    border-radius: 1em;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #fff;
+    margin-top: 2em;
+}
+
+.win-msg {
+    color: rgb(255, 200, 0);
+    font-weight: 900;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.lose-msg {
+    color: #545454;
+    font-weight: 900;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
